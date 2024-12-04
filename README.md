@@ -2,6 +2,8 @@
 
 A little express application to convert Deutsche Bank XLS to OFX format.
 
+![](./screenshot/db2ofx.png)
+
 ## Installation
 
 ```sh
