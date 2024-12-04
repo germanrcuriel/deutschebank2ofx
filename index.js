@@ -6,6 +6,7 @@ const storage = multer.memoryStorage()
 const upload = multer({ storage })
 
 const app = express()
+const port = 8080
 
 app.set('view engine', 'pug')
 
@@ -26,4 +27,6 @@ app.post('/convert', upload.single('xls'), (req, res, next) => {
   res.send(Buffer.from(ofx.content))
 })
 
-app.listen(8080)
+app.listen(port, () => {
+  console.log(`Application available on http://localhost:${port}`)
+})
