@@ -1,0 +1,30 @@
+html
+  head
+    title Deutsche Bank XLS to OFX
+    link(
+      href='https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css'
+      rel='stylesheet'
+    )
+  body(class='dark bg-gray-800 flex items-center justify-center')
+    form(action='/convert', enctype='multipart/form-data', method='post')
+      div(class='flex items-center w-full max-w-md')
+        div(class='mr-3')
+          label(
+            class='block mb-2 text-sm font-medium text-gray-900 dark:text-white'
+            for='xls'
+          ) Upload Deutsche Bank XLS file
+          input(
+            accept='application/vnd.ms-excel'
+            class='block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400'
+            id='xls'
+            name='xls'
+            type='file'
+          )
+        button(
+          class='px-5 py-3 mt-7 text-sm font-medium text-center text-white bg-blue-700 rounded-lg cursor-pointer hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800'
+          type='submit'
+        ) Convert
+
+    script(
+      src='https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js'
+    )

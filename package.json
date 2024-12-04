@@ -1,0 +1,19 @@
+{
+  "name": "deutschebank2ofx",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "type": "module",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.21.1",
+    "md5": "^2.3.0",
+    "multer": "^1.4.5-lts.1",
+    "node-xlsx": "^0.24.0",
+    "pug": "^3.0.3"
+  }
+}
