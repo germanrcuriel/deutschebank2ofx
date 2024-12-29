@@ -1,0 +1,10 @@
+---
+version: '2'
+
+services:
+  db2ofx:
+    build: .
+    container_name: db2ofx
+    restart: unless-stopped
+    ports:
+      - ${PORT:-8080}:8080
