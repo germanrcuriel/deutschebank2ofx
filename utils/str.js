@@ -1,7 +1,13 @@
 export const strToMoney = (str) => {
-  const amount = String(str)
-    .replace(/[./]/, '')
+  let amount = Number(str)
+    .toString()
     .replace(',', '.')
+
+  if (isNaN(amount)) {
+    amount = String(str)
+      .replace(/[./]/, '')
+      .replace(',', '.')
+  }
 
   return parseFloat(amount).toFixed(2)
 }

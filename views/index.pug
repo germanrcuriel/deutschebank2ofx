@@ -5,6 +5,7 @@ html
       href='https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css'
       rel='stylesheet'
     )
+
   body(class='dark bg-gray-800 flex items-center justify-center')
     form(action='/convert', enctype='multipart/form-data', method='post')
       div(class='flex items-center w-full max-w-md')
@@ -24,6 +25,9 @@ html
           class='px-5 py-3 mt-7 text-sm font-medium text-center text-white bg-blue-700 rounded-lg cursor-pointer hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800'
           type='submit'
         ) Convert
+
+      div(class='mt-2')
+        p(class='text-xs text-gray-900 dark:text-white') v#{version}
 
     script(
       src='https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js'
